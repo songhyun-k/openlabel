@@ -1,0 +1,2 @@
+"NSBluetoothAlwaysUsageDescription" = "Discover the selected M110 printer and print labels.";
+"NSBluetoothPeripheralUsageDescription" = "Send labels to the selected M110 printer.";

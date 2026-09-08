@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40mm" height="30mm" viewBox="0 0 40 30">
+  <rect x="0.2" y="0.2" width="39.6" height="29.6" rx="1" fill="none" stroke="black" stroke-width="0.25"/>
+  <text x="3" y="7" font-family="Nanum Gothic" font-size="4">오픈라벨</text>
+  <text x="3" y="12" font-family="Nanum Gothic" font-size="2.7">한글 · Openlabel M110</text>
+  <line x1="3" y1="15" x2="37" y2="15" stroke="black" stroke-width="0.2"/>
+  <path d="M3 19h6v6H3z M11 19h2v6h-2z M15 19h4v6h-4z M21 19h1v6h-1z"/>
+  <circle cx="31" cy="22" r="3" fill="none" stroke="black" stroke-width="0.5"/>
+</svg>

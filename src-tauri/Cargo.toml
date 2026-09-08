@@ -1,0 +1,50 @@
+[package]
+name = "openlabel"
+version = "0.1.0"
+edition = "2024"
+description = "Preview and print image labels on a Phomemo M110."
+license = "MIT"
+authors = ["songhyun-k"]
+default-run = "openlabel-desktop"
+
+[lib]
+name = "openlabel_core"
+
+[[bin]]
+name = "openlabel-desktop"
+path = "src/main.rs"
+
+[[bin]]
+name = "openlabel"
+path = "src/bin/openlabel.rs"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-dialog = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+clap = { version = "4", features = ["derive"] }
+sha2 = "0.10"
+fs2 = "0.4"
+base64 = "0.22"
+roxmltree = "0.21.1"
+svgtypes = "0.16.1"
+resvg = { version = "0.48.1", default-features = false, features = ["text", "raster-images"] }
+image = { version = "0.25.10", default-features = false, features = ["png", "jpeg", "gif", "webp", "bmp", "tiff"] }
+btleplug = "0.13.0"
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "time", "sync", "signal", "test-util", "process", "io-util", "net"] }
+uuid = "1"
+dirs = "6"
+png = "0.18"
+libc = "0.2"
+tempfile = "3"
+
+[target.'cfg(windows)'.dependencies]
+windows-sys = { version = "=0.61.2", features = ["Win32_Foundation", "Win32_Security", "Win32_Security_Authorization", "Win32_System_Pipes", "Win32_System_Threading"] }
+
+[dev-dependencies]
+syn = { version = "=2.0.119", features = ["full", "visit"] }
+tauri = { version = "2", features = ["test"] }

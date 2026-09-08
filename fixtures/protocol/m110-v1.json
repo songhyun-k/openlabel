@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "provenance": "독립 구현. MozgAI/sticker-mac 43f5c22cff12bbdf7c0c043dc5417c3ce2ad5251 관찰 기준. 실기 capture 아님.",
+  "rows": 3,
+  "row_bytes": 48,
+  "raster_byte": 129,
+  "writes": [
+    {"hex":"1b4e0d01","delay_ms":30},
+    {"hex":"1b4e040a","delay_ms":30},
+    {"hex":"1f110a","delay_ms":30},
+    {"hex":"1d76300030000300","delay_ms":0},
+    {"repeat_byte":129,"count":128,"delay_ms":20},
+    {"repeat_byte":129,"count":16,"delay_ms":20},
+    {"hex":"","delay_ms":300},
+    {"hex":"1ff005001ff00300","delay_ms":500}
+  ]
+}

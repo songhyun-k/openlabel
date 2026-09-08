@@ -1,0 +1,2 @@
+"NSBluetoothAlwaysUsageDescription" = "선택한 M110 프린터를 검색하고 라벨을 인쇄합니다.";
+"NSBluetoothPeripheralUsageDescription" = "선택한 M110 프린터로 라벨을 전송합니다.";

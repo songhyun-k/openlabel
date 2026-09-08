@@ -1,0 +1,59 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Openlabel",
+  "version": "0.1.0",
+  "identifier": "com.openlabel.desktop",
+  "mainBinaryName": "openlabel-desktop",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://127.0.0.1:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "theme": "Dark",
+        "title": "OpenLabel",
+        "width": 1100,
+        "height": 820,
+        "minWidth": 640,
+        "minHeight": 600
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; connect-src ipc: http://ipc.localhost"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": [
+      "app"
+    ],
+    "icon": [
+      "icons/icon.icns",
+      "icons/icon.png"
+    ],
+    "resources": {
+      "../assets/fonts/OFL.txt": "assets/fonts/OFL.txt",
+      "../assets/fonts/PROVENANCE.md": "assets/fonts/PROVENANCE.md",
+      "../README.md": "README.md",
+      "../assets/preview.png": "assets/preview.png",
+      "icons/icon.png": "src-tauri/icons/icon.png",
+      "../README.ko.md": "README.ko.md",
+      "../integrations/codex/openlabel/SKILL.md": "integrations/codex/openlabel/SKILL.md",
+      "../LICENSE": "LICENSE",
+      "../docs/architecture.md": "docs/architecture.md",
+      "../docs/agent-cli.md": "docs/agent-cli.md",
+      "../docs/design-system.md": "docs/design-system.md",
+      "infoplist/en.lproj/InfoPlist.strings": "en.lproj/InfoPlist.strings",
+      "infoplist/ko.lproj/InfoPlist.strings": "ko.lproj/InfoPlist.strings"
+    },
+    "macOS": {
+      "minimumSystemVersion": "13.3",
+      "infoPlist": "Info.plist",
+      "signingIdentity": "-"
+    }
+  }
+}
